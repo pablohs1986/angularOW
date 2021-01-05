@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AvisosService } from 'src/app/Services/avisos.service';
+
 
 @Component({
   selector: 'app-avisos',
@@ -7,34 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AvisosComponent implements OnInit {
 
-  mensaje: string;
-  visible: boolean;
-
-  constructor() { 
-
-    this.mensaje = "Correo enviado";
-    this.visible = false;
-
+  constructor(private servicioAvisos: AvisosService) { 
   }
 
   ngOnInit(): void {
-    this.mostrarMensaje('Correo enviado.');
-  }
-
-  mostrarMensaje(mensaje: string) {
-    this.mensaje = mensaje;
-    this.visible = true;
-    this.esperarParaOcultarMensaje();
-  }
-
-  ocultarMensaje() {
-    this.visible = false;
-    this.mensaje = '';
-  }
-
-  esperarParaOcultarMensaje() {
-    setTimeout(()=> {
-      this.ocultarMensaje();
-    }, 2000);
   }
 }

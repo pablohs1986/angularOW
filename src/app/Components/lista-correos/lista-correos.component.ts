@@ -13,7 +13,7 @@ export class ListaCorreosComponent implements OnInit {
   constructor() { 
     const correo1 = {
       titulo: "Titulo 1",
-      cuerpo: "Cuerpo 1",
+      cuerpo: "Cuerpo 1", 
       emisor: "emisor1@blabla.es",
       destinatario: "destinatario1@blabla.es",
       leido: true
@@ -28,18 +28,18 @@ export class ListaCorreosComponent implements OnInit {
     };
 
     const correo3 = {
-      titulo: "Titulo 2",
-      cuerpo: "Cuerpo 2",
-      emisor: "emisor2@blabla.es",
-      destinatario: "destinatario2@blabla.es",
+      titulo: "Titulo 3",
+      cuerpo: "Cuerpo 3",
+      emisor: "emisor3@blabla.es",
+      destinatario: "destinatario3@blabla.es",
       leido: false
     };
 
     const correo4 = {
-      titulo: "Titulo 2",
-      cuerpo: "Cuerpo 2",
-      emisor: "emisor2@blabla.es",
-      destinatario: "destinatario2@blabla.es",
+      titulo: "Titulo 4",
+      cuerpo: "Cuerpo 4",
+      emisor: "emisor4@blabla.es",
+      destinatario: "destinatario4@blabla.es",
       leido: false
     };
 
